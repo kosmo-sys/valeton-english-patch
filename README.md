@@ -1,27 +1,32 @@
-# GP-50 PatchToEnglish
+# Valeton Multi-effects Patch To English Scripts
 
 ![GP-50 Modded Interface](GP-50Modded.jpeg)
 
-Translates the Valeton GP-50 guitar processor firmware from Chinese to English.
+Translates the Valeton GP-50, GP-100, and GP-5 guitar processor firmware from Chinese to English.
 
 ## What This Tool Does
 
-This script replaces Chinese text strings in the GP-50 firmware with English translations while preserving the original byte structure and boundaries. It performs surgical string replacement in the firmware's string table section.
+This script replaces Chinese text strings in firmwares with English translations while preserving the original byte structure and boundaries. It performs surgical string replacement in the firmware's string table section.
 
 ## Requirements
 
-- **Original GP-50 Firmware V1.0.5** (must be obtained legally)
+- **Original Valeton Firmware** (must be obtained legally)
 - Windows PowerShell 5.1+ or PowerShell Core 7+
 - A computer to run the patching script
 
 ### Where to Get the Original Firmware
 
-Download the original V1.0.5 firmware from Valeton's official website:
+Download the original firmware from Valeton's official website:
 https://www.valeton.net/pages/download
 
-Or search for "Valeton GP-50 firmware download" on your preferred search engine.
+Or search for "Valeton firmware download" on your preferred search engine.
+
+
 
 ## Disclaimer - IMPORTANT
+
+Scripts for **GP-100** (`GP-100-PatchToEnglish-v2.ps1`) and **GP-5** (`GP-5-PatchToEnglish-v1_0_6.ps1`) are included but have **NOT been tested** on actual hardware. They are provided as-is for community testing. Use them at your own discretion.
+
 
 **By using this software, you agree to the following terms:**
 
