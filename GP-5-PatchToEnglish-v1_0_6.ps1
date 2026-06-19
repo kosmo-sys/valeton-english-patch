@@ -1,6 +1,5 @@
-# GP-5 PatchToEnglish v5
+# GP-5 PatchToEnglish v106
 # Translates GP-5 firmware from Chinese to English
-# License: OpenCode
 
 param(
     [Parameter(ValueFromRemainingArguments=$true)]
@@ -42,11 +41,11 @@ while ($i -lt $Arguments.Count) {
 
 function Show-Help {
     Write-Host @"
-GP-5 PatchToEnglish v5
+GP-5 PatchToEnglish v106
 ======================
 
 USAGE:
-    .\GP-5-PatchToEnglish-v5.ps1 -input <firmware> [-output <output>] [OPTIONS]
+    .\GP-5-PatchToEnglish-v1_0_6.ps1 -input <firmware> [-output <output>] [OPTIONS]
 
 OPTIONS:
     -input <file>          Input firmware file (required)
@@ -57,13 +56,13 @@ OPTIONS:
     --man               Show detailed manual
 
 EXAMPLES:
-    .\GP-5-PatchToEnglish-v5.ps1 -input "GP-5 Firmware V1.0.6.bin"
-    .\GP-5-PatchToEnglish-v5.ps1 -input firm.bin -output patchfirm.bin --force-patch
-    .\GP-5-PatchToEnglish-v5.ps1 -input firm.bin -r 162348 0x1624AC
+    .\GP-5-PatchToEnglish-v1_0_6.ps1 -input "GP-5 Firmware V1.0.6.bin"
+    .\GP-5-PatchToEnglish-v1_0_6.ps1 -input firm.bin -output patchfirm.bin --force-patch
+    .\GP-5-PatchToEnglish-v1_0_6.ps1 -input firm.bin -r 162348 0x1624AC
 
 OUTPUT:
     Patched firmware saved to input folder
-    Output filename: <original>-PatchedToEnglish-v5.bin (or custom -output)
+    Output filename: <original>-PatchedToEnglish-vv1_0_6.bin (or custom -output)
 
 "@ -ForegroundColor Cyan
     exit 0
@@ -71,7 +70,7 @@ OUTPUT:
 
 function Show-Man {
     Write-Host @"
-GP-5 PatchToEnglish v5 - Detailed Manual
+GP-5 PatchToEnglish v106 - Detailed Manual
 =========================================
 
 DESCRIPTION:
@@ -113,7 +112,7 @@ OPTIONS:
 
 OUTPUT FILES:
     The patched firmware is saved to the specified output path, or to
-    the same folder as the input file with -PatchedToEnglish-v5.bin suffix.
+    the same folder as the input file with -PatchedToEnglish-v1_0_6.bin suffix.
 
 TECHNICAL DETAILS:
     - Scans for UTF-8 encoded Chinese strings in the specified region
@@ -210,7 +209,7 @@ if (-not $OutputFile) {
     }
 }
 
-Write-Host "GP-5 PatchToEnglish v5" -ForegroundColor Cyan
+Write-Host "GP-5 PatchToEnglish v1_0_6" -ForegroundColor Cyan
 Write-Host "======================" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "Input:   $InputFile"
