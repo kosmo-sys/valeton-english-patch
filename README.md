@@ -166,3 +166,18 @@ The process is identical for the GP-50:
 ---
 
 **Remember: Modifying firmware can damage your device. You assume all responsibility for any damage or issues.**
+
+---
+
+## GP-5 Support
+![GP-5 Modded Interface](GP-5Modded.jpg)
+A script has also been added for the GP-5 device. The GP-5 script is completely identical to the GP-50 script, except that the string region is located at **0x162348 0x1624AC** instead.
+
+### GP-5 Script Usage
+
+```powershell
+powershell -ExecutionPolicy Bypass -File ".\GP-5-PatchToEnglish-v6.ps1" -input "GP-5 Firmware V1.0.6.bin"
+```
+
+
+
